@@ -1,3 +1,3 @@
-import createInt8TypedArray from "./5-typed_arrays.js";
+import uploadPhoto from './5-photo-reject';
 
-console.log(createInt8TypedArray(10,2, 89));
+console.log(uploadPhoto('guillaume.jpg'));
