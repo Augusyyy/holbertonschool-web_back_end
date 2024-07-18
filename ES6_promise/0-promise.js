@@ -1,2 +1,3 @@
-let header = document.querySelector("header");
-header.style.color = "#FF0000";
+export default function getResponseFromAPI() {
+  return new Promise((resolve) => resolve);
+}

@@ -1,1 +1,1 @@
-reading the inform
+reading for imfor
