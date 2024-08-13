@@ -1,4 +1,4 @@
-#!/usr/bin/env/python3
+#!/usr/bin/env python3
 ''' Description:takes a float n as argument and returns the floor of the float
     Arguments: n: float
 '''
