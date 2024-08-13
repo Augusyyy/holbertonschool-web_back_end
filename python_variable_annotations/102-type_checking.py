@@ -21,4 +21,3 @@ array = tuple([12, 72, 91])
 zoom_2x = zoom_array(array)
 
 zoom_3x = zoom_array(array, int(3.0))
-
