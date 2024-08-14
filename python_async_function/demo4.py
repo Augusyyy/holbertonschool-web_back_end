@@ -1,0 +1,35 @@
+import time
+import asyncio
+
+
+async def washing1():
+    await asyncio.sleep(3)  # 第一台洗衣机,
+    print('washer1 finished')  # 洗完了
+
+
+async def washing2():
+    await asyncio.sleep(8)
+    print('washer2 finished')
+
+
+async def washing3():
+    await asyncio.sleep(5)
+    print('washer3 finished')
+
+
+async def main():
+    print('start main:')
+    start_time = time.time()
+    task1 = asyncio.create_task(washing1())
+    task2 = asyncio.create_task(washing2())
+    task3 = asyncio.create_task(washing3())
+    await task1
+    await task2
+    await task3
+    end_time = time.time()
+    print('-----------end main----------')
+    print('总共耗时:{}'.format(end_time-start_time))
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
