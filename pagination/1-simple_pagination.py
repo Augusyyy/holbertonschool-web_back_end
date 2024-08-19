@@ -56,3 +56,4 @@ class Server:
         except IndexError:
             return []
 
+
