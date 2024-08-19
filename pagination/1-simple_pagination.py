@@ -55,3 +55,4 @@ class Server:
             return all_data_list[start:end]
         except IndexError:
             return []
+
