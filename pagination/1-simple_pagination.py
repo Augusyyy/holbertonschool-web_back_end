@@ -36,7 +36,7 @@ class Server:
             with open(self.DATA_FILE) as f:
                 reader = csv.reader(f)
                 dataset = [row for row in reader]
-            self.__dataset = dataset[1:] #把第一行标题去掉，所以[1:]
+            self.__dataset = dataset[1:]
 
         return self.__dataset
 
