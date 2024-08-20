@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 ''' Description: Implement a get_hyper method that takes the same arguments
                  (and defaults) as get_page and returns a dictionary containing
