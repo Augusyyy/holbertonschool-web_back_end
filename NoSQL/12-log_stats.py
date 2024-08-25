@@ -23,7 +23,7 @@ def log_infos() -> None:
 
     for method in methods:
         print(
-            "\tmethod {}: {}".format(
+            "\t\tmethod {}: {}".format(
                 method, nginx.count_documents({'method': method})
             )
         )

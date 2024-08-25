@@ -49,7 +49,7 @@ def log_infos() -> None:
         if i == 10:
             break
         print(
-            "\t{}: {}".format(
+            "\t\t{}: {}".format(
                 ip.get('_id'),
                 ip.get('total')
             )
