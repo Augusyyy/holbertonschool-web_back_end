@@ -23,7 +23,7 @@ def log_infos() -> None:
 
     for method in methods:
         print(
-            "\tmethod {}: {}".format(
+            "\t\tmethod {}: {}".format(
                 method, nginx.count_documents({'method': method})
             )
         )
@@ -34,7 +34,7 @@ def log_infos() -> None:
         )
     )
 
-    print("IPs:")
+    print("IPs:", end="")
 
     ips = []
 
@@ -48,11 +48,12 @@ def log_infos() -> None:
     for ip in top_ips:
         if i == 10:
             break
+        print("\n")
         print(
             "\t\t{}: {}".format(
                 ip.get('_id'),
                 ip.get('total')
-            )
+            ), end=""
         )
         i += 1
 

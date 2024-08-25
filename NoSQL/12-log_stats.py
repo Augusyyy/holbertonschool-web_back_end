@@ -31,7 +31,7 @@ def log_infos() -> None:
     print(
         "{} status check".format(
             nginx.count_documents({'method': 'GET', 'path': '/status'})
-        )
+        ), end=""
     )
 
 
