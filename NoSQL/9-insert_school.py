@@ -5,8 +5,7 @@
 
 
 def insert_school(mongo_collection, **kwargs):
-    """ mongo_collection will be the pymongo collection object
-        Returns the new _id
-    """
-    document_id = mongo_collection.insert_one(kwargs)
-    return document_id
+    """insert docs"""
+    new_school = kwargs
+    result = mongo_collection.insert_one(new_school)
+    return result.inserted_id
