@@ -9,7 +9,6 @@ function countStudents(path) {
     throw new Error('Cannot load the database');
   }
 
-  //get line by line
   content = content.toString().split('\n');
 
   let students = content.filter((item) => item);
